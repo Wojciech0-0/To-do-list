@@ -8,7 +8,10 @@
         Title="AddTaskWindow" Height="450" Width="800">
     <Grid Background="#FF42474B">
         <Grid Background="#FF868E96" Margin="0,58,0,45">
-            
+            <TextBox HorizontalAlignment="Left" Height="25" Margin="217,23,0,0" TextWrapping="Wrap" Text="Wpisz nazwę" MaxLength="30" FontSize="16" VerticalAlignment="Top" Width="364"/>
+
         </Grid>
+        <Label Content="Dodaj" FontSize="40" HorizontalContentAlignment="Center" Margin="258,0,256,361" VerticalContentAlignment="Center" Foreground="White" FontFamily="Ink Free"/>
+
     </Grid>
 </Window>

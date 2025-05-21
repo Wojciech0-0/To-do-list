@@ -13,7 +13,7 @@
             <RowDefinition Height="301*"/>
             <RowDefinition Height="44*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="ADD" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top" Width="55" Height="54" Background="#FF1971C2" BorderBrush="Black" Click="Button_Click">
+        <Button x:Name="ADD" HorizontalAlignment="Left" Click="ADD_Click" Margin="38,10,0,0" VerticalAlignment="Top" Width="55" Height="54" Background="#FF1971C2" BorderBrush="Black">
             <Button.Content>
                 <Image Source="148386097-ikona-plus-izolowana-na-białym-tle-dodaj-ikonę-plus-znak-plus-ikona-medyczna-removebg-preview.png"/>
             </Button.Content>
