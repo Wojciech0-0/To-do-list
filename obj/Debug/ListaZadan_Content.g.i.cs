@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("de18ae7d25cea00a569f391100ae56d990105791a99a2d42f35d84477a869d68-removebg-preview" +
-    ".png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("menu.png")]
 
 

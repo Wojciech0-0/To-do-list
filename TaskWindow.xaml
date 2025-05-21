@@ -6,7 +6,27 @@
         xmlns:local="clr-namespace:ListaZadan"
         mc:Ignorable="d"
         Title="TaskWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="#FF42474B">
+        <Grid Background="#FF868E96" Margin="0,64,0,76">
+            <TextBox FontFamily="Ink Free" HorizontalAlignment="Left" Height="25" Margin="217,23,0,0" TextWrapping="Wrap" Text="Wpisz nazwę" MaxLength="30" FontSize="16" VerticalAlignment="Top" Width="364"/>
+            <Label FontFamily="Ink Free" Content="Priorytet:" FontSize="20" HorizontalAlignment="Left" Margin="217,69,0,0" VerticalAlignment="Top" Foreground="White"/>
+            <GroupBox Padding="10" HorizontalAlignment="Left" Height="89" Margin="335,69,0,0" VerticalAlignment="Top" Width="149" BorderThickness="0" ClipToBounds="True">
+                <StackPanel HorizontalAlignment="Left" Height="78" Margin="-8,0,-6,0" VerticalAlignment="Top" Width="131">
+                    <RadioButton Content="Nie ważne" FontFamily="Ink Free" FontSize="18" Foreground="White"/>
+                    <RadioButton Content="Średnio ważne" FontFamily="Ink Free" FontSize="18" Foreground="White"/>
+                    <RadioButton Content="Ważne" FontFamily="Ink Free" FontSize="18" Foreground="White"/>
+                </StackPanel>
+
+            </GroupBox>
+
+            <DatePicker FontFamily="Ink Free" FontSize="14" Margin="261,192,293,66"/>
+
+        </Grid> 
+        <Button Background="red" HorizontalAlignment="Left" Margin="711,358,0,0" VerticalAlignment="Top" Width="57" Height="51">
+            <Button.Content>
+                <Image Source="de18ae7d25cea00a569f391100ae56d990105791a99a2d42f35d84477a869d68-removebg-preview.png" Height="51"/>
+            </Button.Content>
+        </Button>
+
     </Grid>
 </Window>

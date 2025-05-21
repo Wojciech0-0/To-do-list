@@ -19,17 +19,66 @@
             </Button.Content>
         </Button>
         <Label Content="To-do list" FontSize="40" HorizontalContentAlignment="Center" Margin="193,0,206,0" VerticalContentAlignment="Center" Height="74" Width="293" Foreground="White" FontFamily="Ink Free"/>
-        <Button x:Name="SORT" HorizontalAlignment="Left" Margin="540,10,0,0" VerticalAlignment="Top" Width="109" Height="54" Background="#FF1971C2" BorderBrush="Black" Click="Button_Click">
+        <Button x:Name="SORT" HorizontalAlignment="Left" Margin="540,10,0,0" VerticalAlignment="Top" Width="109" Height="54" Background="#FF1971C2" BorderBrush="Black" Click="SORT_Click">
             <Button.Content>
                 <Image Source="sort_descending_icon_151089.png"/>
             </Button.Content>
         </Button>
         <Grid HorizontalAlignment="Left" Height="301" Grid.Row="1" VerticalAlignment="Top" Width="692" Background="#FF868E96">
+            <ListBox x:Name="TaskList" Background="#FF868E96" Padding="50px" FontFamily="Ink Free" Width="600px" HorizontalContentAlignment="Stretch">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border Background="#a5d8ff" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
 
+                                <!-- CheckBox -->
+                                <CheckBox Grid.Column="0"
+                              Margin="5"
+                              VerticalAlignment="Center"
+                              IsChecked="{Binding IsCompleted}" />
+
+                                <!-- Treść zadania wycentrowana -->
+                                <StackPanel Grid.Column="1"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center" Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Name}" FontWeight="Bold" TextAlignment="Center" FontSize="20"/>
+                                    <TextBlock Margin="8,0,8,0" Text="{Binding DueDate, StringFormat=' {0:dd.MM.yyyy}'}"
+                                   FontSize="20"
+                                   TextAlignment="Center"/>
+                                    <TextBlock Text="{Binding Priority}"
+                                   FontSize="20"
+                                   Foreground="DarkRed"
+                                   TextAlignment="Center"/>
+                                </StackPanel>
+
+                                <!-- Menu Button -->
+                                <Button x:Name="menu" Grid.Column="2"
+                            Width="30"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Padding="0"
+                            Cursor="Hand"
+                            Click="menu_Click"
+                            Focusable="False"
+                            VerticalAlignment="Center">
+                                    <Button.Content>
+                                        <Image Source="menu.png"/>
+                                    </Button.Content>
+                                </Button>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </Grid>
-        <RadioButton x:Name="ALL" Content="Wszystkie" IsChecked="True" HorizontalAlignment="Left" Margin="79,10,0,0" Grid.Row="2" Foreground="White" FontSize="22" VerticalAlignment="Top" Height="26" Width="126"/>
-        <RadioButton x:Name="TO_DO" Content="Do zrobienia" HorizontalAlignment="Left" Margin="260,10,0,0" Grid.Row="2" Foreground="White" FontSize="22" VerticalAlignment="Top" Height="26" Width="156"/>
-        <RadioButton x:Name="DONE" Content="Zrobione" HorizontalAlignment="Left" Margin="476,10,0,0" Grid.Row="2" Foreground="White" FontSize="22" VerticalAlignment="Top" Height="26" Width="126"/>
+        <RadioButton FontFamily="Ink Free"  x:Name="ALL" Content="Wszystkie" IsChecked="True" HorizontalAlignment="Left" Margin="79,10,0,0" Grid.Row="2" Foreground="White" FontSize="22" VerticalAlignment="Top" Height="26" Width="126"/>
+        <RadioButton FontFamily="Ink Free" x:Name="TO_DO" Content="Do zrobienia" HorizontalAlignment="Left" Margin="260,10,0,0" Grid.Row="2" Foreground="White" FontSize="22" VerticalAlignment="Top" Height="26" Width="156"/>
+        <RadioButton FontFamily="Ink Free" x:Name="DONE" Content="Zrobione" HorizontalAlignment="Left" Margin="476,10,0,0" Grid.Row="2" Foreground="White" FontSize="22" VerticalAlignment="Top" Height="26" Width="126"/>
 
 
     </Grid>
