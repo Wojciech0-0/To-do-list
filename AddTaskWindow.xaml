@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ListaZadan"
         mc:Ignorable="d"
-        Title="AddTaskWindow" Height="450" Width="800">
+        Title="AddTaskWindow" Height="450" Width="800" ResizeMode="CanMinimize">
     <Grid Background="#FF42474B">
         <Grid Background="#FF868E96" Margin="0,58,0,77">
             <TextBox GotFocus="Add_nazwa_GotFocus" x:Name="Add_nazwa" FontFamily="Ink Free" Height="25" Margin="217,26,217,0" TextWrapping="Wrap" Text="Wpisz nazwę" MaxLength="16" FontSize="16" VerticalAlignment="Top"/>

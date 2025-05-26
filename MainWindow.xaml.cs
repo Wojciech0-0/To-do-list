@@ -153,6 +153,18 @@ namespace ListaZadan
                 }
             }
         }
+        private void menu_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender as FrameworkElement;
+            if (button?.DataContext is TaskItem selectedTask)
+            {
+                var taskWindow = new TaskWindow(selectedTask, Tasks);
+                taskWindow.ShowDialog();
 
+                // Po zamknięciu okna lista automatycznie się odświeży, bo to ObservableCollection
+                // Jeśli chcesz dodatkowe działania po edycji, możesz je tu dodać.
+            }
+        }
     }
 }
+

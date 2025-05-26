@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ListaZadan"
         mc:Ignorable="d"
-        Title="TaskWindow" Height="450" Width="800">
+        Title="TaskWindow" Height="450" Width="800" ResizeMode="CanMinimize">
     <Grid Background="#FF42474B">
         <Grid Background="#FF868E96" Margin="0,64,0,76">
             <TextBox x:Name="Name" FontFamily="Ink Free" HorizontalAlignment="Left" Height="25" Margin="217,23,0,0" TextWrapping="Wrap" Text="Wpisz nazwę" MaxLength="16" FontSize="16" VerticalAlignment="Top" Width="364"/>
