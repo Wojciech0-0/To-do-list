@@ -36,13 +36,11 @@
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
 
-                                <!-- CheckBox -->
                                 <CheckBox Grid.Column="0"
                               Margin="5"
                               VerticalAlignment="Center"
-                              IsChecked="{Binding IsCompleted}" />
+                              IsChecked="{Binding IsCompleted}"/>
 
-                                <!-- Treść zadania wycentrowana -->
                                 <StackPanel Grid.Column="1"
                                 VerticalAlignment="Center"
                                 HorizontalAlignment="Center" Orientation="Horizontal">

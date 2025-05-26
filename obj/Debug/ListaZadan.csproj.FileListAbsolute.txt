@@ -51,3 +51,5 @@ E:\Aplikacje_desktopowe\ListaZadan\ListaZadan\obj\Debug\ListaZadan.g.resources
 E:\Aplikacje_desktopowe\ListaZadan\ListaZadan\obj\Debug\ListaZadan.Properties.Resources.resources
 E:\Aplikacje_desktopowe\ListaZadan\ListaZadan\obj\Debug\ListaZadan.csproj.GenerateResource.cache
 E:\Aplikacje_desktopowe\ListaZadan\ListaZadan\obj\Debug\ListaZadan.csproj.CoreCompileInputs.cache
+E:\Aplikacje_desktopowe\ListaZadan\ListaZadan\obj\Debug\SortOptionsWindow.baml
+E:\Aplikacje_desktopowe\ListaZadan\ListaZadan\obj\Debug\SortOptionsWindow.g.cs
