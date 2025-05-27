@@ -161,8 +161,40 @@ namespace ListaZadan
                 var taskWindow = new TaskWindow(selectedTask, Tasks);
                 taskWindow.ShowDialog();
 
-                // Po zamknięciu okna lista automatycznie się odświeży, bo to ObservableCollection
-                // Jeśli chcesz dodatkowe działania po edycji, możesz je tu dodać.
+            }
+        }
+
+        public ObservableCollection<TaskItem> ToDoTasks = new ObservableCollection<TaskItem>();
+        public ObservableCollection<TaskItem> DoneTasks = new ObservableCollection<TaskItem>();
+
+        private void ALL_Checked(object sender, RoutedEventArgs e)
+        {
+            TaskList.ItemsSource = Tasks;
+        }
+
+        private void TO_DO_Checked(object sender, RoutedEventArgs e)
+        {
+            ToDoTasks.Clear();
+            foreach(var task in Tasks)
+            {
+                if(task.IsCompleted == false)
+                {
+                    ToDoTasks.Add(task);
+                }
+            }
+            TaskList.ItemsSource = ToDoTasks;
+        }
+
+        private void DONE_Checked(object sender, RoutedEventArgs e)
+        {
+            DoneTasks.Clear();
+            foreach(var task in Tasks)
+            {
+                if (task.IsCompleted)
+                {
+                    DoneTasks.Add(task);
+                }
+                TaskList.ItemsSource = DoneTasks;
             }
         }
     }

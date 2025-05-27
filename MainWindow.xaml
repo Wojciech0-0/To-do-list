@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ListaZadan"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="700" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+        Title="To-do list" Height="450" Width="700" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Grid Background="#FF42474B">
         <Grid.RowDefinitions>
             <RowDefinition Height="74*"/>
@@ -74,9 +74,9 @@
                 </ListBox.ItemTemplate>
             </ListBox>
         </Grid>
-        <RadioButton FontFamily="Ink Free"  x:Name="ALL" Content="Wszystkie" IsChecked="True" HorizontalAlignment="Left" Margin="79,10,0,0" Grid.Row="2" Foreground="White" FontSize="22" VerticalAlignment="Top" Height="26" Width="126"/>
-        <RadioButton FontFamily="Ink Free" x:Name="TO_DO" Content="Do zrobienia" HorizontalAlignment="Left" Margin="260,10,0,0" Grid.Row="2" Foreground="White" FontSize="22" VerticalAlignment="Top" Height="26" Width="156"/>
-        <RadioButton FontFamily="Ink Free" x:Name="DONE" Content="Zrobione" HorizontalAlignment="Left" Margin="476,10,0,0" Grid.Row="2" Foreground="White" FontSize="22" VerticalAlignment="Top" Height="26" Width="126"/>
+        <RadioButton FontFamily="Ink Free"  x:Name="ALL" Content="Wszystkie" IsChecked="True" HorizontalAlignment="Left" Margin="79,10,0,0" Grid.Row="2" Foreground="White" FontSize="22" VerticalAlignment="Top" Height="26" Width="126" Checked="ALL_Checked"/>
+        <RadioButton FontFamily="Ink Free" x:Name="TO_DO" Content="Do zrobienia" HorizontalAlignment="Left" Margin="260,10,0,0" Grid.Row="2" Foreground="White" FontSize="22" VerticalAlignment="Top" Height="26" Width="156" Checked="TO_DO_Checked"/>
+        <RadioButton FontFamily="Ink Free" x:Name="DONE" Content="Zrobione" HorizontalAlignment="Left" Margin="476,10,0,0" Grid.Row="2" Foreground="White" FontSize="22" VerticalAlignment="Top" Height="26" Width="126" Checked="DONE_Checked"/>
 
 
     </Grid>
