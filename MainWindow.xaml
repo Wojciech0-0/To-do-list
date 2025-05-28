@@ -6,29 +6,29 @@
         xmlns:local="clr-namespace:ListaZadan"
         mc:Ignorable="d"
         Title="To-do list" Height="450" Width="700" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
-    <Grid Background="#FF42474B">
+    <Grid Background="#FF5FF0E2">
         <Grid.RowDefinitions>
             <RowDefinition Height="74*"/>
 
             <RowDefinition Height="301*"/>
             <RowDefinition Height="44*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="ADD" HorizontalAlignment="Left" Click="ADD_Click" Margin="38,10,0,0" VerticalAlignment="Top" Width="55" Height="54" Background="#FF1971C2" BorderBrush="Black">
+        <Button x:Name="ADD" HorizontalAlignment="Left" Click="ADD_Click" Margin="38,10,0,0" VerticalAlignment="Top" Width="55" Height="54" Background="#FF5DCD9F" BorderBrush="Black">
             <Button.Content>
                 <Image Source="148386097-ikona-plus-izolowana-na-białym-tle-dodaj-ikonę-plus-znak-plus-ikona-medyczna-removebg-preview.png"/>
             </Button.Content>
         </Button>
-        <Label Content="To-do list" FontSize="40" HorizontalContentAlignment="Center" Margin="193,0,206,0" VerticalContentAlignment="Center" Height="74" Width="293" Foreground="White" FontFamily="Ink Free"/>
-        <Button x:Name="SORT" HorizontalAlignment="Left" Margin="540,10,0,0" VerticalAlignment="Top" Width="109" Height="54" Background="#FF1971C2" BorderBrush="Black" Click="SORT_Click">
+        <Label Content="To-do list" FontSize="40" HorizontalContentAlignment="Center" Margin="193,0,206,0" VerticalContentAlignment="Center" Height="74" Width="293" Foreground="Black" FontFamily="Ink Free"/>
+        <Button x:Name="SORT" HorizontalAlignment="Left" Margin="540,10,0,0" VerticalAlignment="Top" Width="109" Height="54" Background="#FF5DCD9F" BorderBrush="Black" Click="SORT_Click">
             <Button.Content>
                 <Image Source="sort_descending_icon_151089.png"/>
             </Button.Content>
         </Button>
-        <Grid HorizontalAlignment="Left" Height="301" Grid.Row="1" VerticalAlignment="Top" Width="692" Background="#FF868E96">
-            <ListBox x:Name="TaskList" Background="#FF868E96" Padding="50px" FontFamily="Ink Free" Width="600px" HorizontalContentAlignment="Stretch">
+        <Grid HorizontalAlignment="Left" Height="301" Grid.Row="1" VerticalAlignment="Top" Width="692" Background="#FFCCFFEA">
+            <ListBox x:Name="TaskList" Background="#FF9BEECC" Padding="50px" FontFamily="Ink Free" Width="600px" HorizontalContentAlignment="Stretch">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <Border Background="#a5d8ff" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
+                        <Border Background="#FF5FF0E2" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto"/>
@@ -74,9 +74,9 @@
                 </ListBox.ItemTemplate>
             </ListBox>
         </Grid>
-        <RadioButton FontFamily="Ink Free"  x:Name="ALL" Content="Wszystkie" IsChecked="True" HorizontalAlignment="Left" Margin="79,10,0,0" Grid.Row="2" Foreground="White" FontSize="22" VerticalAlignment="Top" Height="26" Width="126" Checked="ALL_Checked"/>
-        <RadioButton FontFamily="Ink Free" x:Name="TO_DO" Content="Do zrobienia" HorizontalAlignment="Left" Margin="260,10,0,0" Grid.Row="2" Foreground="White" FontSize="22" VerticalAlignment="Top" Height="26" Width="156" Checked="TO_DO_Checked"/>
-        <RadioButton FontFamily="Ink Free" x:Name="DONE" Content="Zrobione" HorizontalAlignment="Left" Margin="476,10,0,0" Grid.Row="2" Foreground="White" FontSize="22" VerticalAlignment="Top" Height="26" Width="126" Checked="DONE_Checked"/>
+        <RadioButton FontFamily="Ink Free"  x:Name="ALL" Content="Wszystkie" IsChecked="True" HorizontalAlignment="Left" Margin="79,10,0,0" Grid.Row="2" Foreground="Black" FontSize="22" VerticalAlignment="Top" Height="26" Width="126" Checked="ALL_Checked" Background="#FF5FF0E2"/>
+        <RadioButton FontFamily="Ink Free" x:Name="TO_DO" Content="Do zrobienia" HorizontalAlignment="Left" Margin="260,10,0,0" Grid.Row="2" Foreground="Black" FontSize="22" VerticalAlignment="Top" Height="26" Width="156" Checked="TO_DO_Checked" Background="#FF5FF0E2"/>
+        <RadioButton FontFamily="Ink Free" x:Name="DONE" Content="Zrobione" HorizontalAlignment="Left" Margin="476,10,0,0" Grid.Row="2" Foreground="Black" FontSize="22" VerticalAlignment="Top" Height="26" Width="126" Checked="DONE_Checked" Background="#FF5FF0E2"/>
 
 
     </Grid>

@@ -6,15 +6,15 @@
         xmlns:local="clr-namespace:ListaZadan"
         mc:Ignorable="d"
         Title="Dodaj zadanie" Height="450" Width="800" ResizeMode="CanMinimize">
-    <Grid Background="#FF42474B">
-        <Grid Background="#FF868E96" Margin="0,58,0,77">
+    <Grid Background="#FF5FF0E2">
+        <Grid Background="#FFCCFFEA" Margin="0,58,0,77">
             <TextBox GotFocus="Add_nazwa_GotFocus" x:Name="Add_nazwa" FontFamily="Ink Free" Height="25" Margin="217,26,217,0" TextWrapping="Wrap" Text="Wpisz nazwę" MaxLength="16" FontSize="16" VerticalAlignment="Top"/>
-            <Label FontFamily="Ink Free" Content="Priorytet:" FontSize="20" HorizontalAlignment="Left" Margin="217,69,0,0" VerticalAlignment="Top" Foreground="White"/>
+            <Label FontFamily="Ink Free" Content="Priorytet:" FontSize="20" HorizontalAlignment="Left" Margin="217,69,0,0" VerticalAlignment="Top" Foreground="#FF509C11"/>
             <GroupBox Padding="10" HorizontalAlignment="Left" Height="89" Margin="335,69,0,0" VerticalAlignment="Top" Width="149" BorderThickness="0" ClipToBounds="True">
                 <StackPanel HorizontalAlignment="Left" Height="78" Margin="-8,0,-6,0" VerticalAlignment="Top" Width="131">
-                    <RadioButton IsChecked="True" x:Name="LowPriority" Content="Nie ważne" FontFamily="Ink Free" FontSize="18" Foreground="White"/>
-                    <RadioButton x:Name="MediumPriority" Content="Średnio ważne" FontFamily="Ink Free" FontSize="18" Foreground="White"/>
-                    <RadioButton x:Name="HighPriority" Content="Ważne" FontFamily="Ink Free" FontSize="18" Foreground="White"/>
+                    <RadioButton Background="#FFCCFFEA" IsChecked="True" x:Name="LowPriority" Content="Nie ważne" FontFamily="Ink Free" FontSize="18" Foreground="#FF509C11"/>
+                    <RadioButton Background="#FFCCFFEA" x:Name="MediumPriority" Content="Średnio ważne" FontFamily="Ink Free" FontSize="18" Foreground="#FF509C11"/>
+                    <RadioButton Background="#FFCCFFEA" x:Name="HighPriority" Content="Ważne" FontFamily="Ink Free" FontSize="18" Foreground="#FF509C11"/>
                 </StackPanel>
 
             </GroupBox>
@@ -22,10 +22,10 @@
             <DatePicker x:Name="Add_data" FontFamily="Ink Free" FontSize="14" Margin="277,189,277,60"/>
 
         </Grid>
-        <Label Content="Dodaj" FontSize="40" HorizontalContentAlignment="Center" Margin="257,0,257,361" VerticalContentAlignment="Center" Foreground="White" FontFamily="Ink Free"/>
-        <Button x:Name="dodaj" Click="dodaj_Click" HorizontalAlignment="Left" Margin="711,355,0,0" VerticalAlignment="Top" Width="55" Height="54" Background="#FF1971C2" BorderBrush="Black">
+        <Label Content="Dodaj" FontSize="40" HorizontalContentAlignment="Center" Margin="257,0,257,361" VerticalContentAlignment="Center" Foreground="Black" FontFamily="Ink Free"/>
+        <Button x:Name="dodaj" Click="dodaj_Click" HorizontalAlignment="Left" Margin="711,355,0,0" VerticalAlignment="Top" Width="55" Height="54" Background="#FF5DCD9F">
             <Button.Content>
-                <Image Source="148386097-ikona-plus-izolowana-na-białym-tle-dodaj-ikonę-plus-znak-plus-ikona-medyczna-removebg-preview.png"/>
+                <Image  Source="image-removebg-preview.png"/>
             </Button.Content>
         </Button>
     </Grid>
