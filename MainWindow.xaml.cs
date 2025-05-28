@@ -104,7 +104,8 @@ namespace ListaZadan
 
                 Tasks.Add(newTask);
             }
-
+            search.Text = "Wyszukaj";
+            TaskList.ItemsSource = Tasks;
         }
 
         private void SORT_Click(object sender, RoutedEventArgs e)
@@ -164,8 +165,8 @@ namespace ListaZadan
             }
         }
 
-        public ObservableCollection<TaskItem> ToDoTasks = new ObservableCollection<TaskItem>();
-        public ObservableCollection<TaskItem> DoneTasks = new ObservableCollection<TaskItem>();
+        public ObservableCollection<TaskItem> Tasks2 = new ObservableCollection<TaskItem>();
+        public ObservableCollection<TaskItem> Tasks3 = new ObservableCollection<TaskItem>();
 
         private void ALL_Checked(object sender, RoutedEventArgs e)
         {
@@ -174,28 +175,63 @@ namespace ListaZadan
 
         private void TO_DO_Checked(object sender, RoutedEventArgs e)
         {
-            ToDoTasks.Clear();
+            Tasks2.Clear();
             foreach(var task in Tasks)
             {
                 if(task.IsCompleted == false)
                 {
-                    ToDoTasks.Add(task);
+                    Tasks2.Add(task);
                 }
             }
-            TaskList.ItemsSource = ToDoTasks;
+            TaskList.ItemsSource = Tasks2;
         }
 
         private void DONE_Checked(object sender, RoutedEventArgs e)
         {
-            DoneTasks.Clear();
+            Tasks2.Clear();
             foreach(var task in Tasks)
             {
                 if (task.IsCompleted)
                 {
-                    DoneTasks.Add(task);
+                    Tasks2.Add(task);
                 }
-                TaskList.ItemsSource = DoneTasks;
+                TaskList.ItemsSource = Tasks2;
             }
+        }
+
+        private void search_GotFocus(object sender, RoutedEventArgs e)
+        {
+            search.Text = "";
+        }
+
+        private void search_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string Szukaj = search.Text.ToLower();
+            string nazwa;
+
+            Tasks3.Clear();
+            foreach (var task in Tasks)
+            {
+                nazwa = task.Name.ToLower();
+                bool zawiera = nazwa.Contains(Szukaj);
+
+                if((DONE.IsChecked == true && task.IsCompleted) || (TO_DO.IsChecked == true && task.IsCompleted == false) || (ALL.IsChecked == true))
+                {
+                    if (zawiera)
+                    {
+                        Tasks3.Add(task);
+                    }
+                }
+                
+            }
+
+            TaskList.ItemsSource = Tasks3;
+        }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            search.Text = "Wyszukaj";
+            TaskList.ItemsSource = Tasks;
         }
     }
 }
