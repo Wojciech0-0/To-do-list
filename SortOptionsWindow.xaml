@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ListaZadan"
         mc:Ignorable="d"
-        Title="Posortuj" Height="200" Width="300" WindowStartupLocation="Manual" Left="1000" Top="330" ResizeMode="CanMinimize">
-    <Grid Background="#FF5FF0E2">
-        <Grid Background="#FFCCFFEA" Margin="0,10,0,35">
+        Title="Posortuj" Height="200" Width="300" WindowStartupLocation="Manual" Left="1000" Top="330" ResizeMode="CanMinimize" FontFamily="Ink Free">
+    <Grid Background="#FF5FF0E2" Margin="0.5">
+        <Grid Background="#FFCCFFEA" Height="130" Margin="0,9,0,32">
             <StackPanel Margin="1">
-                <Label Foreground="#FF509C11" Content="Sortuj według:" FontSize="16" Margin="0,0,0,6" Background="#FF9CFFCD"/>
-                <RadioButton Foreground="#FF509C11" x:Name="rbPriority" Content="Priorytet" FontSize="14" Margin="0,5" Background="#FFCCFFEA"/>
-                <RadioButton Foreground="#FF509C11" x:Name="rbDueDate" Content="Data" FontSize="14" Margin="0,5" Background="#FFCCFFEA"/>
-                <RadioButton Foreground="#FF509C11" x:Name="rbName" Content="Nazwa" FontSize="14" Margin="0,5" Background="#FFCCFFEA"/>
+                <Label Foreground="#FF509C11" HorizontalContentAlignment="Center" Content="Sortuj według:" FontSize="16" Margin="0,0,0,6" Background="#FF9CFFCD"/>
+                <RadioButton Foreground="#FF509C11" x:Name="rbPriority" Content="Priorytetu" FontSize="14" Margin="6" Background="#FFCCFFEA"/>
+                <RadioButton Foreground="#FF509C11" x:Name="rbDueDate" Content="Daty" FontSize="14" Margin="6" Background="#FFCCFFEA"/>
+                <RadioButton Foreground="#FF509C11" x:Name="rbName" Content="Nazwy" FontSize="14" Margin="6" Background="#FFCCFFEA"/>
             </StackPanel>
         </Grid>
-        <Button  Background="#FF5DCD9F" Foreground="White" Content="OK" Width="80" Margin="107,139,107,0" HorizontalAlignment="Center" Click="Ok_Click"/>
+        <Button  Background="#FF5DCD9F" Foreground="White" Content="OK" Click="Ok_Click" Margin="112,139,114,0"/>
     </Grid>
 </Window>

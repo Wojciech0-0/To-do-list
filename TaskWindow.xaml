@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ListaZadan"
         mc:Ignorable="d"
-        Title="Menu zadań" Height="450" Width="800" ResizeMode="CanMinimize">
+        Title="Menu zadań" Height="420" Width="800" ResizeMode="CanMinimize">
     <Grid Background="#FF5FF0E2">
         <Grid Background="#FFCCFFEA" Margin="0,36,0,76">
             <TextBox x:Name="Name" FontFamily="Ink Free" HorizontalAlignment="Left" Height="25" Margin="217,23,0,0" TextWrapping="Wrap" Text="Wpisz nazwę" MaxLength="16" FontSize="16" VerticalAlignment="Top" Width="364"/>
@@ -18,16 +18,15 @@
                 </StackPanel>
 
             </GroupBox>
-
-            <DatePicker x:Name="Data" FontFamily="Ink Free" FontSize="14" Margin="261,192,293,74"/>
+            <DatePicker x:Name="Data" FontFamily="Ink Free" FontSize="14" Margin="263,192,291,53"/>
 
         </Grid>
-        <Button x:Name="Delete" Background="#FF5DCD9F" HorizontalAlignment="Left" Margin="30,358,0,0" VerticalAlignment="Top" Width="57" Height="51" Click="Delete_Click">
+        <Button x:Name="Delete" BorderThickness="2" BorderBrush="Black" Background="#FF5DCD9F" Margin="51,330,686,10" Width="57" Height="51" Click="Delete_Click" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button.Content>
                 <Image Source="de18ae7d25cea00a569f391100ae56d990105791a99a2d42f35d84477a869d68-removebg-preview.png" Height="51"/>
             </Button.Content>
         </Button>
-        <Button x:Name="Save" Background="#FF5DCD9F" HorizontalAlignment="Left" Margin="696,358,0,0" VerticalAlignment="Top" Width="57" Height="51" Click="Save_Click">
+        <Button x:Name="Save" BorderThickness="2" Background="#FF5DCD9F" Margin="709,330,28,10" Width="57" Height="51" Click="Save_Click" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button.Content>
                 <Image Source="image-removebg-preview.png"/>
             </Button.Content>

@@ -23,7 +23,7 @@
 
         </Grid>
         <Label Content="Dodaj" FontSize="40" HorizontalContentAlignment="Center" Margin="257,0,257,361" VerticalContentAlignment="Center" Foreground="Black" FontFamily="Ink Free"/>
-        <Button x:Name="dodaj" Click="dodaj_Click" HorizontalAlignment="Left" Margin="711,355,0,0" VerticalAlignment="Top" Width="55" Height="54" Background="#FF5DCD9F">
+        <Button BorderThickness="2" x:Name="dodaj" Click="dodaj_Click" Margin="713,357,26,10" Width="55" Height="54" Background="#FF5DCD9F" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button.Content>
                 <Image  Source="image-removebg-preview.png"/>
             </Button.Content>
